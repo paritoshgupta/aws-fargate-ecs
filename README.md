@@ -2,7 +2,7 @@
 
 ![Continuous-Delivery](ECS_workflow.jpg)
 
-- **1. Elastic Container Service**
+- **1. Elastic Container Service Method**
     - Setup app: virtualenv + make all
     - Test app local: python app.py
     - Curl it to test: curl localhost:8080/change/1/34
@@ -15,5 +15,16 @@
     - Deploy to Fargate: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/AWS_Fargate.html
     - Test the public service
 
-- **2. AWS App Runner**
+- **2. AWS App Runner Method**
+    - You can deploy straight from source code or point to a container
+    - **AWS App Runner creates a streamlined workflow that connects a source repo, deploy environment, and a resulting secure URL.**
+    - This repository can easily be converted to an AWS Runner Method in Wizard to the following:
+
+        - For build do: pip install -r requirements.txt
+        - To run: python app.py
+        - For port: 8080
+
+![Continuous-Delivery](aws_app_runner.png)
+
+
     
