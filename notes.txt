@@ -1,0 +1,5 @@
+- The fundamental idea of a CONTAINERIZED STACK is to package an application and its dependencies into a single reusuable artifact, which can be instantiated reliably in
+different environments.
+- Docker is instruction-based, not requirement-based
+- Once we have Dockerfile, we can compile it into a binary artifact called an image.
+- Each Data Science project has many dependencies, and reproducibility is at the heart of the process
