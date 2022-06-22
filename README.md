@@ -1,7 +1,7 @@
-Container as a Service (CaaS)
+<h1>Container as a Service (CaaS)</h1><br>
 ![Continuous-Delivery](ECS_workflow.jpg)
 
-- *1.Elastic Container Service*
+- **1. Elastic Container Service**
     - Setup app: virtualenv + make all
     - Test app local: python app.py
     - Curl it to test: curl localhost:8080/change/1/34
@@ -14,5 +14,5 @@ Container as a Service (CaaS)
     - Deploy to Fargate: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/AWS_Fargate.html
     - Test the public service
 
-- *2.AWS App Runner*
+- **2. AWS App Runner**
     
