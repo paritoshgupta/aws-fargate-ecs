@@ -1,14 +1,15 @@
 ![Continuous-Delivery](ECS_workflow.jpg)
 
 - Elastic Container Service
-    - setup app: virtualenv + make all
-    - test app local: python app.py
-    - curl it to test: curl localhost:8080/change/1/34
-    - create ECR Repo: https://www.freecodecamp.org/news/build-and-push-docker-images-to-aws-ecr/
-    - build container: docker build -t changemachineimage .
-    - push container
+    - Setup app: virtualenv + make all
+    - Test app local: python app.py
+    - Curl it to test: curl localhost:8080/change/1/34
+    - Create ECR Repo: https://www.freecodecamp.org/news/build-and-push-docker-images-to-aws-ecr/
+    - Build container: docker build -t changemachineimage .
+    - Push container
         - docker tag changemachineimage:latest XXXXXXXXXX.dkr.ecr.us-east-1.amazonaws.com/changemachine   
         - docker push XXXXXXXXXX.dkr.ecr.us-east-1.amazonaws.com/changemachine   
+    - Run docker local: docker run -p 8080:8080 changemachineimage
     - Deploy to Fargate
     - Test the public service
 
