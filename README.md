@@ -28,7 +28,11 @@
 
 ![Continuous-Delivery](aws_app_runner.png)
 
-** A key innovation is the ability to connect many different services on AWS, i.e., core infrastructure, like AWS CloudWatch, Load Balancers, Container Services and API gateways into one complete offering.
+#### *A key innovation is the ability to connect many different services on AWS, i.e., core infrastructure, like AWS CloudWatch, Load Balancers, Container Services and API gateways into one complete offering.*
 
 
+### Resources:
+
+* [Fargate-AWS](https://aws.amazon.com/getting-started/hands-on/build-modern-app-fargate-lambda-dynamodb-python/module-two/)
+* [Python-Fargate-AWS](https://github.com/aws-samples/aws-modern-application-workshop/tree/python/module-2)
     
