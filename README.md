@@ -16,7 +16,9 @@
     - Test the public service
 
 - **2. AWS App Runner Method**
-    - You can deploy straight from source code or point to a container
+
+    - Build and run production web applications at scale
+    - AWS App Runner is a fully managed service that makes it easy for developers to deploy from source code or container image directly to a scalable and secure web application.
     - **AWS App Runner creates a streamlined workflow that connects a source repo, deploy environment, and a resulting secure URL.**
     - This repository can easily be converted to an AWS Runner Method in Wizard to the following:
 
@@ -25,6 +27,8 @@
         - For port: 8080
 
 ![Continuous-Delivery](aws_app_runner.png)
+
+** A key innovation is the ability to connect many different services on AWS, i.e., core infrastructure, like AWS CloudWatch, Load Balancers, Container Services and API gateways into one complete offering.
 
 
     
