@@ -1,6 +1,6 @@
 ![Continuous-Delivery](ECS_workflow.jpg)
 
-Elastic Container Service
+- Elastic Container Service
     - setup app: virtualenv + make all
     - test app local: python app.py
     - curl it to test: curl localhost:8080/change/1/34
