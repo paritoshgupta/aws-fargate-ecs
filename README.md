@@ -1,6 +1,6 @@
 ![Continuous-Delivery](ECS_workflow.jpg)
 
-- Elastic Container Service
+- *Elastic Container Service*
     - Setup app: virtualenv + make all
     - Test app local: python app.py
     - Curl it to test: curl localhost:8080/change/1/34
@@ -10,7 +10,7 @@
         - docker tag changemachineimage:latest XXXXXXXXXX.dkr.ecr.us-east-1.amazonaws.com/changemachine   
         - docker push XXXXXXXXXX.dkr.ecr.us-east-1.amazonaws.com/changemachine   
     - Run docker local: docker run -p 8080:8080 changemachineimage
-    - Deploy to Fargate
+    - Deploy to Fargate: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/AWS_Fargate.html
     - Test the public service
 
     
