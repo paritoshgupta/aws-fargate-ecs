@@ -3,3 +3,11 @@ different environments.
 - Docker is instruction-based, not requirement-based
 - Once we have Dockerfile, we can compile it into a binary artifact called an image.
 - Each Data Science project has many dependencies, and reproducibility is at the heart of the process
+- Once the local Docker image and container are created, next publish it from our local Docker repository to 
+AWS ECR (Elastic Container Registry), done through ECS (Elastic Container Service)
+- ECS is a fully managed container orchestration service that makes it easy for you to deploy, manage, and scale containerized applications.
+- And ECR is the registry for Docker containers stored in ECS. We will be using ECS to push our Docker container to ECR.
+- AWS Fargate:
+    - Technology that you can use with Amazon ECS to run containers without having to manage servers or clusters of Amazon EC2 instances. 
+    - With Fargate, you no longer have to provision, configure, or scale clusters of virtual machines to run containers.
+    -  This removes the need to choose server types, decide when to scale your clusters, or optimize cluster packing.
