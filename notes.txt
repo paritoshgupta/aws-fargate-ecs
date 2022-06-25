@@ -1,13 +1,26 @@
-- The fundamental idea of a CONTAINERIZED STACK is to package an application and its dependencies into a single reusuable artifact, which can be instantiated reliably in
-different environments.
-- Docker is instruction-based, not requirement-based
-- Once we have Dockerfile, we can compile it into a binary artifact called an image.
-- Each Data Science project has many dependencies, and reproducibility is at the heart of the process
-- Once the local Docker image and container are created, next publish it from our local Docker repository to 
-AWS ECR (Elastic Container Registry), done through ECS (Elastic Container Service)
-- ECS is a fully managed container orchestration service that makes it easy for you to deploy, manage, and scale containerized applications.
-- And ECR is the registry for Docker containers stored in ECS. We will be using ECS to push our Docker container to ECR.
+
+- Docker
+    - The fundamental idea of a CONTAINERIZED STACK is to package an application and its dependencies into a single reusuable artifact, 
+        which can be instantiated reliably in different environments
+    - Docker is instruction-based, not requirement-based
+    - Once we have Dockerfile, we can compile it into a binary artifact called an image
+    - Each Data Science project has many dependencies, and reproducibility is at the heart of the process
+
+- AWS ECS and ECR
+    - ECS is a fully managed container orchestration service that makes it easy for you to deploy, manage, and scale containerized applications
+    - And ECR is the registry for Docker containers stored in ECS. We will be using ECS to push our Docker container to ECR
+    - Once the local Docker image and container are created, next publish it from our local Docker repository to 
+        AWS ECR (Elastic Container Registry), done through ECS (Elastic Container Service)
+
 - AWS Fargate:
-    - Technology that you can use with Amazon ECS to run containers without having to manage servers or clusters of Amazon EC2 instances. 
-    - With Fargate, you no longer have to provision, configure, or scale clusters of virtual machines to run containers.
-    -  This removes the need to choose server types, decide when to scale your clusters, or optimize cluster packing.
+    - Technology that you can use with Amazon ECS to run containers without having to manage servers or clusters of Amazon EC2 instances
+    - With Fargate, you no longer have to provision, configure, or scale clusters of virtual machines to run containers
+    - This removes the need to choose server types, decide when to scale your clusters, or optimize cluster packing
+
+- AWS DeepLens Device:
+    - Deep-learning enabled video camera
+    - This allows a rapid feedback loop that focuses on the problem versus the technology to solve the problem
+    - The device is a complete computer vision hardware developer kit, it contains a 1080p camera, operating system and wireless capabilites
+    - Once AWS DeepLens starts capturing video:
+        - The Project Stream adds real-time annotation and sends the package to the MQ Telemetry Transport (MQTT) service which is a Publish-Subscribe network protocol
+    - The DeepLens is a "plug and play" technology as it tackles the most challenging part of the problem of building a real-time CV prototyping system - **Capturing the data, and sending it somewhere*
